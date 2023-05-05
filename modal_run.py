@@ -8,7 +8,7 @@ model_name = 'gpt2'					# huggingface name
 gpu_count = 1
 modal_volume_name = "test_volume"
 
-stub = modal.Stub( "AlpacaGPT" )	# this is a model app name
+stub = modal.Stub( "AlpacaGPT" )			# this is a modal app name
 
 @stub.function( 
 	image = modal.Image.debian_slim().pip_install_from_requirements( 'requirements.txt' ),
